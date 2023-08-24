@@ -1,11 +1,7 @@
-# add your code here
-import pandas as pd 
+import pandas as pd
 
-data = {
-    'Apples': [35, 41],
-    'Bananas': [21, 34]
-}
-
-df = pd.DataFrame(data, index=['2017 Sales', '2018 Sales'])
-
-df.to_csv('fruit.cvs')
+fruit_sale =pd.DataFrame({'Apples': [35, 41],
+                          'Bananas': [21, 34]},
+index=['2017 Sales', '2018 Sales'])
+fruit_sale
+fruit_sale.to_csv('fruit.csv')
